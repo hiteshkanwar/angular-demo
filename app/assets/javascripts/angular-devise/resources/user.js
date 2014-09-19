@@ -6,7 +6,6 @@ angular.module('angularDevise.resources').factory('UserSession', ['$http', funct
   };
 
   UserSession.prototype.$save = function() {
-    debugger
     return $http.post('/users/sign_in', {
       "user" : {
         "email" : this.email,
