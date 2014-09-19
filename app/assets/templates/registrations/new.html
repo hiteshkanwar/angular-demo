@@ -1,0 +1,37 @@
+<h1>Sign up</h1>
+<form name="myForm" ng-submit="create()">
+  <div class="control-group">
+    <label class="control-label" for="email">Email</label>
+    <div class="controls">
+      <input type="email" id="email" name="email" placeholder="Email" ng-model="registration.email" ng-minlength="2" required>
+    </div>
+    </div>
+    <label class="control-label" for="subdomain">Subdomain</label>
+    <div class="controls">
+      <input type="text" id="subdomain" name="subdomain" placeholder="Subdomain" ng-model="registration.subdomain" ng-minlength="2" required>
+    </div>
+    </div>
+    <label class="control-label" for="subdomain">Role</label>
+    <div class="controls">
+      <input type="radio" value="Buyer" name="role" ng-model="registration.role" ng-minlength="2" > Buyer
+      <input type="radio" value="Seller" name="role" ng-model="registration.role" ng-minlength="2" > Seller
+    </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="password">Password</label>
+      <div class="controls">
+        <input type="password" id="password" name="password" placeholder="Password" ng-model="registration.password" ng-minlength="2" password-validate required>
+      </div>
+    </div>
+    <div class="control-group">
+      <label class="control-label" for="password_confirmation">Password</label>
+      <div class="controls">
+        <input type="password" id="password_confirmation" name="password_confirmation" placeholder="Password" ng-model="registration.password_confirmation" ng-minlength="2" password-validate required>
+      </div>
+    </div>
+    <div class="control-group">
+      <div class="controls">
+        <button type="submit" class="btn">Sign up</button>
+      </div>
+  </div>
+</form>​
